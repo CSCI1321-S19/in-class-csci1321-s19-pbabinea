@@ -1,0 +1,19 @@
+3
+Room 0
+You are in room 0.
+2
+chair
+It is a chair
+computer
+Beep
+-1,1,-1,-1,-1,-1
+Room 1
+It is the next room.
+0
+0,-1,2,-1,-1,-1
+Room 2
+The next next room.
+1
+item
+the item in the next next room
+-1,-1-1,1,-1,-1

@@ -1,0 +1,13 @@
+<map>
+	<room name="room 1">
+		description of room 1
+		<item name="item name">item description</item>
+		<exit>-1 1 -1 -1 -1 -1</exit>
+	</room>
+	<room name="room 2">
+		this is room 2
+		<item name="an item">item that items</item>
+		<item name="another item">item it is another</item>
+		<exit>0 -1 2 -1 -1 -1</room
+	</room>
+</map>
