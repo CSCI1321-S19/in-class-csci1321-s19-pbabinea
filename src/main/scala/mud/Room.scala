@@ -28,7 +28,6 @@ class Room(
   }
 
   def getItem(itemName: String): Option[Item] = {
-    println(itemName)
     val foundItem = items.find(item => item.name.toLowerCase == itemName)
     foundItem match {
       case None => None
