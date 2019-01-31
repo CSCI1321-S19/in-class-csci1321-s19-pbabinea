@@ -1,13 +1,18 @@
 <map>
-	<room name="room 1">
-		description of room 1
-		<item name="item name">item description</item>
+	<room name="room 0">
+		description of room 0
+		<item name="item">item description</item>
 		<exits>-1 1 -1 -1 -1 -1</exits>
 	</room>
-	<room name="room 2">
-		this is room 2
+	<room name="room 1">
+		<description>this is room 1</description>
 		<item name="an item">item that items</item>
 		<item name="another item">item it is another</item>
 		<exits>0 -1 2 -1 -1 -1</exits>
+	</room>
+	<room name="room 2">
+		<description>this is room 2</description>
+		<item name="itemMMM">hehehehe</item>
+		<exits>-1 -1 1 -1 -1 -1</exits>
 	</room>
 </map>
