@@ -1,5 +1,5 @@
 package drMario
 
-class Pill {
-  
+class Pill extends BoardElement{
+  def cells: List[Cell] = ???
 }
