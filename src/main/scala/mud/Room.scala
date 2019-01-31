@@ -13,7 +13,7 @@ class Room(
   val exits: Array[Int]) { //the ints are the numbers for the rooms and are arranged directionally
 
   def description(): String = {
-    "You are currently in " + name + ".\n" + desc + "\nThe items in this room are...\n" + itemListing + "\nThere are exits somewhere."
+    "You are currently in " + name + ".\n" + desc + "\n\nThe items in this room are...\n" + itemListing
   }
   def itemListing(): String = {
     if (items.length == 0) {
@@ -28,7 +28,8 @@ class Room(
   }
 
   def getItem(itemName: String): Option[Item] = {
-    val foundItem = items.find(item => item.name == itemName)
+    println(itemName)
+    val foundItem = items.find(item => item.name.toLowerCase == itemName)
     foundItem match {
       case None => None
       case Some(a) => {

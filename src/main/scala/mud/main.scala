@@ -3,7 +3,9 @@ package mud
 object main {
   def main(args:Array[String]):Unit = {
     val player = new Player(Nil, Room.rooms(0))
-    println("This is a bunch of intro text.\n Well, what would you like to do?")
+    println("What is your name?")
+    readLine
+    println("Actually, it doesn't matter.\nAren't you worried about where you are right now? Why don't you try looking around.")
     var done = false
     while (!done){
       val input = readLine.toLowerCase

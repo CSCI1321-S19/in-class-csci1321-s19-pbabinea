@@ -35,7 +35,7 @@ class Player(
     }
   }
   def getFromInventory(itemName: String): Option[Item] = {
-    val foundItem = inventory.find(item => item.name == itemName)
+    val foundItem = inventory.find(item => item.name.toLowerCase == itemName)
     foundItem match {
       case None => None
       case Some(a) => {
@@ -59,7 +59,7 @@ class Player(
       println("You can't go this way.")
     }
     else {
-      location = Room.rooms(dir)
+      location = Room.rooms(location.exits(dir))
       println(location.description)
     }
     
